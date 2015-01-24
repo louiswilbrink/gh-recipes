@@ -1,9 +1,9 @@
 server {
-    listen 8080;
+    listen 80;
     server_name localhost;
 
     location / {
-        proxy_pass  http://localhost:8181;
+        proxy_pass  http://localhost:8080;
         proxy_http_version 1.1;
         proxy_set_header        Upgrade         $http_update;
         proxy_set_header        Connection      'upgrade';
