@@ -1,5 +1,5 @@
 template "gh.conf" do
-  path "#{node[:nginx][:dir]}/conf.d"
+  path "#{node[:nginx][:dir]}/conf.d/gh.conf"
   source "gh.conf.erb"
   owner "root"
   group "root"
